@@ -1,0 +1,20 @@
+{
+  "name": "practice-js",
+  "module": "index.ts",
+  "private": true,
+  "scripts": {
+    "dev": "clear && bun run index.ts",
+    "array": "clear && bun run array.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/chalk-animation": "^1.6.2",
+    "chalk": "^5.3.0"
+  }
+}
