@@ -1,21 +1,4 @@
-import chalk from 'chalk';
-
-const log = console.log;
-const header = chalk.italic.redBright.underline;
-const subheader = chalk.magentaBright;
-const diff = chalk.blueBright;
-const dashStyle = chalk.yellow;
-const highlight = chalk.italic.underline.grey;
-
-const terminalWidth = process.stdout.columns;
-
-const dashed = (w = terminalWidth) => {
-  let dash = '';
-  for (let i = 0; i < w; i++) {
-    dash += '-';
-  }
-  log('\n' + dashStyle(dash) + '\n');
-}
+import { log, header, subheader, diff, highlight, dashed } from './lib/utils'
 
 // Array methods
 // splice: arr.splice(start[, deleteCount, elem1, ..., elemN])
