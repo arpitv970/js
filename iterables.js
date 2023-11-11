@@ -41,3 +41,15 @@ log(diff('After: '))
 for (let char of str) {
   log(char)
 }
+
+dashed();
+
+log(subheader('Calling an iterator explicitly'))
+str = 'Hello';
+let itr = str[Symbol.iterator]();
+
+while (true) {
+  let res = itr.next();
+  if (res.done) break;
+  log(res.value);
+}
