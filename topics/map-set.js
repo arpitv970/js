@@ -74,3 +74,21 @@ log(mpObj)
 dashed();
 
 log(header('Sets'))
+log(subheader('Set meathods'))
+
+let set = new Set();
+let naruto = {
+  name: 'Naruto'
+}
+let ichigo = {
+  name: 'Ichigo'
+}
+
+set.add(naruto);
+set.add(ichigo);
+
+log(set)
+
+log('\n')
+log(subheader('Iteration over Set:'))
+set.forEach((value, valueAgain, set) => log(value))
