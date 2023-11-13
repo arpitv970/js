@@ -1,4 +1,4 @@
-import { log, header, subheader, diff, highlight, dashed } from './lib/utils'
+import { log, header, subheader, diff, highlight, dashed } from '../lib/utils'
 
 // Array methods
 // splice: arr.splice(start[, deleteCount, elem1, ..., elemN])

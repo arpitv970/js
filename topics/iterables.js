@@ -1,4 +1,4 @@
-import { log, header, subheader, diff, highlight, dashed } from './lib/utils'
+import { log, header, subheader, diff, highlight, dashed } from '../lib/utils'
 
 log(header('Iterables'));
 log(subheader(`To undertand concept of iterables, let's make one by ourself`))

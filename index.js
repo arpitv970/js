@@ -6,7 +6,7 @@ log(chalk.blueBright('Hi, this project is simply to understand JS...'));
 log('\n')
 log(chalk.yellow(`So far we have covered following topics:`))
 
-const topics = [
+export const topics = [
   {
     topic: `Array's Methods`,
     script: 'array'
@@ -14,6 +14,10 @@ const topics = [
   {
     topic: `Iterables`,
     script: 'iterables'
+  },
+  {
+    topic: `Maps && Sets`,
+    script: 'map-set'
   },
 ]
 

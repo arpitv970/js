@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "clear && bun run index.js",
-    "array": "clear && bun run array.js",
-    "iterables": "clear && bun run iterables.js"
+    "array": "clear && bun run topics/array.js",
+    "iterables": "clear && bun run topics/iterables.js",
+    "map-set": "clear && bun run topics/map-set.js"
   },
   "devDependencies": {
     "bun-types": "latest"
