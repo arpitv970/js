@@ -7,7 +7,9 @@
     "array": "clear && bun run topics/array.js",
     "iterables": "clear && bun run topics/iterables.js",
     "map-set": "clear && bun run topics/map-set.js",
-    "keys-values-entries": "clear && bun run topics/keys-values-entries.js"
+    "keys-values-entries": "clear && bun run topics/keys-values-entries.js",
+    "destructuring": "clear && bun run topics/destructuring.js",
+    "date-time": "clear && bun run topics/date-time.js"
   },
   "devDependencies": {
     "bun-types": "latest"
