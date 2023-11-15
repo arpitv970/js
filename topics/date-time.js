@@ -68,6 +68,7 @@ log(subheader('Adding in dates'))
 date = new Date(2016, 1, 28)
 log(diff('Before:'))
 log(date)
+log('\n')
 log(diff('After:'))
 date.setDate(date.getDate() + 2)
 log(date)
@@ -75,3 +76,35 @@ log(date)
 dashed()
 
 log(subheader('Benchmarking'))
+log(diff('2 ways of getting difference in dates:'))
+const diffSubtract = (date1, date2) => {
+  return date2 - date1
+}
+
+const diffGetTime = (date1, date2) => {
+  return date2.getTime() - date1.getTime()
+}
+
+const bench = (f) => {
+  const date1 = new Date(0)
+  const date2 = new Date()
+  let start = Date.now()
+  for (let i = 0; i < 100000; i++) f(date1, date2)
+  return Date.now() - start
+}
+
+let time1 = 0;
+let time2 = 0;
+
+for (let i = 0; i < 10; i++) {
+  time1 += bench(diffSubtract)
+  time2 += bench(diffGetTime)
+}
+
+log(highlight('#1 date2 - date1'))
+log(`Time taken: ${time1} ms`)
+
+log('\n')
+
+log(highlight('#2 date2.getTime() - date1.getTime()'))
+log(`Time taken: ${time2} ms`)
