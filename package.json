@@ -9,7 +9,8 @@
     "map-set": "clear && bun run topics/map-set.js",
     "keys-values-entries": "clear && bun run topics/keys-values-entries.js",
     "destructuring": "clear && bun run topics/destructuring.js",
-    "date-time": "clear && bun run topics/date-time.js"
+    "date-time": "clear && bun run topics/date-time.js",
+    "json-methods": "clear && bun run topics/json-methods.js"
   },
   "devDependencies": {
     "bun-types": "latest"
