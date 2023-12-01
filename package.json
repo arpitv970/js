@@ -10,7 +10,8 @@
     "keys-values-entries": "clear && bun run topics/keys-values-entries.js",
     "destructuring": "clear && bun run topics/destructuring.js",
     "date-time": "clear && bun run topics/date-time.js",
-    "json-methods": "clear && bun run topics/json-methods.js"
+    "json-methods": "clear && bun run topics/json-methods.js",
+    "scheduling": "clear && bun run topics/scheduling.js"
   },
   "devDependencies": {
     "bun-types": "latest"
